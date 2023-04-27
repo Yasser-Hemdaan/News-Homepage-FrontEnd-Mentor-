@@ -28,7 +28,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  transition: all 0.3s ease-in-out;
   user-select: none;
   -webkit-user-drag: none;
   -moz-user-drag: none;
@@ -76,6 +75,7 @@ a {
 
 .nav .list li a {
   color: var(--main-color);
+  transition: all 0.3s ease-in-out;
 }
 .nav .list li:active a,
 .nav .list li:hover a,
@@ -193,6 +193,7 @@ a {
   margin-bottom: 10px;
   cursor: pointer;
   transition: inherit;
+  transition: all 0.3s ease-in-out;
 }
 
 .box2 .topics .item .title:hover {
@@ -230,7 +231,7 @@ a {
 }
 
 .box4 .content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 25px;
 }
 
@@ -248,11 +249,17 @@ a {
   font-weight: bold;
   padding: 15px 20px;
   display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 .box4 .content .read a:hover {
   background-color: var(--main-color);
   color: var(--third-color);
+}
+
+.box4 .content .read a:active {
+  color: white;
+  background-color: red;
 }
 
 .items {
@@ -298,6 +305,7 @@ a {
   color: var(--main-color);
   font-weight: bold;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .box5 h4:hover,
@@ -309,7 +317,7 @@ a {
 .box5 p,
 .box6 p,
 .box7 p {
-  color: lightgray;
+  color: rgb(103, 103, 103);
   line-height: 1.5em;
   font-size: 1rem;
 }
